@@ -7,7 +7,6 @@ import matplotlib.ticker as ticker
 import os
 import re
 
-login(token="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")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 num_rounds = 21
