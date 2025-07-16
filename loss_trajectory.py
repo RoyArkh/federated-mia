@@ -28,7 +28,7 @@ tokenizer = AutoTokenizer.from_pretrained("EleutherAI/pythia-70m")
 
 for round_id in range(1, num_rounds):
     model_id = f"YusufBayram-Personal/EleutherAI-pythia-70m_wikitext_round_{round_id}"
-    model = AutoModelForCausalLM.from_pretrained(model_id, token="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").to(device)
+    model = AutoModelForCausalLM.from_pretrained(model_id, token="").to(device)
     model.eval()
 
     for ex in samples:
